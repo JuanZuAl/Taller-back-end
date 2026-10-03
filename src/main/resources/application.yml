@@ -1,0 +1,17 @@
+spring:
+    datasource:
+        url: ${DB_URL:jdbc:mysql://localhost:3306/inventario?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC}
+        username: ${DB_USERNAME:Juan}
+        password: ${DB_PASSWORD:Zuluaga12}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        open-in-view: true
+
+        show-sql: true
+
+        properties:
+            hibernate:
+                format_sql: true
